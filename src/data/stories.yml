@@ -1,0 +1,154 @@
+stories:
+- steps:
+  - intent: greeting
+  - action: utter_greeting
+  story: greeting story
+- steps:
+  - intent: goodbye
+  - action: utter_goodbye
+  story: goodbye story
+- steps:
+  - intent: creator
+  - action: utter_creator
+  story: creator story
+- steps:
+  - intent: name
+  - action: utter_name
+  story: name story
+- steps:
+  - intent: hours
+  - action: utter_hours
+  story: hours story
+- steps:
+  - intent: number
+  - action: utter_number
+  story: number story
+- steps:
+  - intent: course
+  - action: utter_course
+  story: course story
+- steps:
+  - intent: fees
+  - action: utter_fees
+  story: fees story
+- steps:
+  - intent: location
+  - action: utter_location
+  story: location story
+- steps:
+  - intent: hostel
+  - action: utter_hostel
+  story: hostel story
+- steps:
+  - intent: event
+  - action: utter_event
+  story: event story
+- steps:
+  - intent: document
+  - action: utter_document
+  story: document story
+- steps:
+  - intent: floors
+  - action: utter_floors
+  story: floors story
+- steps:
+  - intent: syllabus
+  - action: utter_syllabus
+  story: syllabus story
+- steps:
+  - intent: library
+  - action: utter_library
+  story: library story
+- steps:
+  - intent: infrastructure
+  - action: utter_infrastructure
+  story: infrastructure story
+- steps:
+  - intent: canteen
+  - action: utter_canteen
+  story: canteen story
+- steps:
+  - intent: menu
+  - action: utter_menu
+  story: menu story
+- steps:
+  - intent: placement
+  - action: utter_placement
+  story: placement story
+- steps:
+  - intent: ithod
+  - action: utter_ithod
+  story: ithod story
+- steps:
+  - intent: computerhod
+  - action: utter_computerhod
+  story: computerhod story
+- steps:
+  - intent: extchod
+  - action: utter_extchod
+  story: extchod story
+- steps:
+  - intent: principal
+  - action: utter_principal
+  story: principal story
+- steps:
+  - intent: sem
+  - action: utter_sem
+  story: sem story
+- steps:
+  - intent: admission
+  - action: utter_admission
+  story: admission story
+- steps:
+  - intent: scholarship
+  - action: utter_scholarship
+  story: scholarship story
+- steps:
+  - intent: facilities
+  - action: utter_facilities
+  story: facilities story
+- steps:
+  - intent: college intake
+  - action: utter_college intake
+  story: college intake story
+- steps:
+  - intent: uniform
+  - action: utter_uniform
+  story: uniform story
+- steps:
+  - intent: committee
+  - action: utter_committee
+  story: committee story
+- steps:
+  - intent: random
+  - action: utter_random
+  story: random story
+- steps:
+  - intent: swear
+  - action: utter_swear
+  story: swear story
+- steps:
+  - intent: vacation
+  - action: utter_vacation
+  story: vacation story
+- steps:
+  - intent: sports
+  - action: utter_sports
+  story: sports story
+- steps:
+  - intent: salutation
+  - action: utter_salutation
+  story: salutation story
+- steps:
+  - intent: task
+  - action: utter_task
+  story: task story
+- steps:
+  - intent: ragging
+  - action: utter_ragging
+  story: ragging story
+- steps:
+  - intent: hod
+  - action: utter_hod
+  story: hod story
+version: '2.0'

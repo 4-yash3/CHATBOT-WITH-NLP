@@ -1,0 +1,154 @@
+rules:
+- rule: Rule for greeting
+  steps:
+  - intent: greeting
+  - action: utter_greeting
+- rule: Rule for goodbye
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye
+- rule: Rule for creator
+  steps:
+  - intent: creator
+  - action: utter_creator
+- rule: Rule for name
+  steps:
+  - intent: name
+  - action: utter_name
+- rule: Rule for hours
+  steps:
+  - intent: hours
+  - action: utter_hours
+- rule: Rule for number
+  steps:
+  - intent: number
+  - action: utter_number
+- rule: Rule for course
+  steps:
+  - intent: course
+  - action: utter_course
+- rule: Rule for fees
+  steps:
+  - intent: fees
+  - action: utter_fees
+- rule: Rule for location
+  steps:
+  - intent: location
+  - action: utter_location
+- rule: Rule for hostel
+  steps:
+  - intent: hostel
+  - action: utter_hostel
+- rule: Rule for event
+  steps:
+  - intent: event
+  - action: utter_event
+- rule: Rule for document
+  steps:
+  - intent: document
+  - action: utter_document
+- rule: Rule for floors
+  steps:
+  - intent: floors
+  - action: utter_floors
+- rule: Rule for syllabus
+  steps:
+  - intent: syllabus
+  - action: utter_syllabus
+- rule: Rule for library
+  steps:
+  - intent: library
+  - action: utter_library
+- rule: Rule for infrastructure
+  steps:
+  - intent: infrastructure
+  - action: utter_infrastructure
+- rule: Rule for canteen
+  steps:
+  - intent: canteen
+  - action: utter_canteen
+- rule: Rule for menu
+  steps:
+  - intent: menu
+  - action: utter_menu
+- rule: Rule for placement
+  steps:
+  - intent: placement
+  - action: utter_placement
+- rule: Rule for ithod
+  steps:
+  - intent: ithod
+  - action: utter_ithod
+- rule: Rule for computerhod
+  steps:
+  - intent: computerhod
+  - action: utter_computerhod
+- rule: Rule for extchod
+  steps:
+  - intent: extchod
+  - action: utter_extchod
+- rule: Rule for principal
+  steps:
+  - intent: principal
+  - action: utter_principal
+- rule: Rule for sem
+  steps:
+  - intent: sem
+  - action: utter_sem
+- rule: Rule for admission
+  steps:
+  - intent: admission
+  - action: utter_admission
+- rule: Rule for scholarship
+  steps:
+  - intent: scholarship
+  - action: utter_scholarship
+- rule: Rule for facilities
+  steps:
+  - intent: facilities
+  - action: utter_facilities
+- rule: Rule for college intake
+  steps:
+  - intent: college intake
+  - action: utter_college intake
+- rule: Rule for uniform
+  steps:
+  - intent: uniform
+  - action: utter_uniform
+- rule: Rule for committee
+  steps:
+  - intent: committee
+  - action: utter_committee
+- rule: Rule for random
+  steps:
+  - intent: random
+  - action: utter_random
+- rule: Rule for swear
+  steps:
+  - intent: swear
+  - action: utter_swear
+- rule: Rule for vacation
+  steps:
+  - intent: vacation
+  - action: utter_vacation
+- rule: Rule for sports
+  steps:
+  - intent: sports
+  - action: utter_sports
+- rule: Rule for salutaion
+  steps:
+  - intent: salutation
+  - action: utter_salutation
+- rule: Rule for task
+  steps:
+  - intent: task
+  - action: utter_task
+- rule: Rule for ragging
+  steps:
+  - intent: ragging
+  - action: utter_ragging
+- rule: Rule for hod
+  steps:
+  - intent: hod
+  - action: utter_hod
+version: '2.0'
