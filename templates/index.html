@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatbot</title>
+    <script>
+        async function sendMessage() {
+            const message = document.getElementById('message').value;
+            const response = await fetch('/webhook', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({ message: message }),
+            });
+            const data = await response.json();
+            document.getElementById('chat').innerHTML += `<p>You: ${message}</p>`;
+            document.getElementById('chat').innerHTML += `<p>Bot: ${data.response}</p>`;
+            document.getElementById('message').value = '';
+        }
+    </script>
+</head>
+<body>
+    <div id="chat"></div>
+    <input id="message" type="text" />
+    <button onclick="sendMessage()">Send</button>
+</body>
+</html>
+
