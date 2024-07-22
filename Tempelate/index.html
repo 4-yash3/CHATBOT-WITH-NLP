@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatbot</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .chat-container {
+            width: 500px;
+            margin: 50px auto;
+        }
+        .chat-box {
+            border: 1px solid #ccc;
+            padding: 10px;
+            height: 400px;
+            overflow-y: scroll;
+        }
+        .input-box {
+            width: 100%;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+    <div class="chat-container">
+        <div class="chat-box" id="chat-box"></div>
+        <input type="text" class="input-box" id="user-input" placeholder="Type a message...">
+    </div>
+
+    <script>
+        $(document).ready(function() {
+            $('#user-input').keypress(function(e) {
+                if (e.which == 13) {
+                    var userMessage = $('#user-input').val();
+                    $('#chat-box').append('<div><b>You:</b> ' + userMessage + '</div>');
+                    $('#user-input').val('');
+                    $.ajax({
+                        url: '/chat',
+                        type: 'POST',
+                        contentType: 'application/json',
+                        data: JSON.stringify({"message": userMessage}),
+                        success: function(response) {
+                            $('#chat-box').append('<div><b>Bot:</b> ' + response.response + '</div>');
+                        }
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
